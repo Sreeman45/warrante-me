@@ -29,7 +29,7 @@ const Homepage: FC = () => {
     const accessToken = localStorage.getItem("googleAccessToken");
 
 if (!accessToken) {
-  alert("Google sign-in required. Please sign in again.");
+  navigate('/signup')
   return;
 }
   }, []);
